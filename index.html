@@ -59,14 +59,7 @@
         transform: scale(1.1);
     }
 
-    #no {
-        background: #dc3545;
-        color: white;
-        position: absolute;
-        left: 220px;
-        top: 80px;
-    }
-
+   
     #message {
         margin-top: 30px;
         font-size: 26px;
@@ -79,14 +72,12 @@
 <body>
 
 <div class="container">
-    <h1>Moto ji Sorry pls Bura mt Maan na  ❤️</h1><BR>
-	<h2> Pls Abhi Aap Vo Steps Maan Jao </h2><Br>
-<H2> Baad me Jb aap Kho ge tb Sb bta dunga pls abhi maan jao </h2>
-
+    <h1> Happy Birthday Moto ji 🎂 ❤️</h1><BR>
+	<div ><h2> ❤️ Wishing you that all your dreams come true soon. May you always be happy, blessed, and surrounded by love. Have an amazing birthday and a beautiful year ahead! ✨🥳</h2><Br>
+	</div>
     <div class="buttons">
-        <button id="yes">OK </button>
-        <button id="no">No</button>
-<img id="loveImage"
+        <button id="yes"> ❤️ </button>
+       <img id="loveImage"
      src="https://media1.tenor.com/m/flLtFgk5huEAAAAC/thank-you.gif"
      alt="Love"
      style="display:none; width:300px; margin-top:20px; border-radius:15px;">
@@ -96,21 +87,12 @@
 </div>
 
 <script>
-const noBtn = document.getElementById("no");
 const yesBtn = document.getElementById("yes");
 const message = document.getElementById("message");
 const image = document.getElementById("loveImage");
 const area = document.querySelector(".buttons");
 
-function moveButton() {
-    const maxX = area.clientWidth - noBtn.offsetWidth;
-    const maxY = area.clientHeight - noBtn.offsetHeight;
 
-    noBtn.style.left = Math.random() * maxX + "px";
-    noBtn.style.top = Math.random() * maxY + "px";
-}
-
-noBtn.addEventListener("mouseenter", moveButton);
 
 yesBtn.addEventListener("click", () => {
     message.innerHTML = "❤️ Thank u ji ☺️❤️";
